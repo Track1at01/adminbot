@@ -1,0 +1,90 @@
+/* auth/styles.css — page-specific overrides on top of main.css */
+
+/* ─── Canvas background tinted for pastel feel ───────────────── */
+#robot-background {
+  filter: hue-rotate(200deg) saturate(0.4) brightness(1.4);
+  opacity: 0.25;
+}
+
+/* ─── Extra decorative circles ───────────────────────────────── */
+.auth-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 55% 50% at 8% 12%,
+      rgba(196, 181, 253, 0.55) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 45% 40% at 92% 88%,
+      rgba(253, 164, 175, 0.45) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 40% 50% at 55% 5%,
+      rgba(147, 197, 253, 0.3) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 5% 90%,
+      rgba(134, 239, 172, 0.25) 0%,
+      transparent 55%
+    ),
+    linear-gradient(148deg, #f2eefb 0%, #ede8f8 50%, #e8e0f5 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ─── Floating shape bottom-left ─────────────────────────────── */
+.scene-wrap::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(253, 164, 175, 0.25) 0%,
+    transparent 70%
+  );
+  bottom: -120px;
+  left: -100px;
+  animation: floatBlob2 10s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes floatBlob2 {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    transform: translate(20px, -30px) scale(1.08);
+  }
+}
+
+/* ─── Brand pill ─────────────────────────────────────────────── */
+.eyebrow {
+  background: linear-gradient(
+    135deg,
+    rgba(196, 181, 253, 0.25),
+    rgba(253, 164, 175, 0.2)
+  );
+  border: 1px solid rgba(196, 181, 253, 0.45);
+}
+
+/* ─── Divider line between label and input ───────────────────── */
+.login-form > label {
+  margin-top: 4px;
+}
+
+/* ─── Card shimmer on load ───────────────────────────────────── */
+.auth-card {
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow:
+    0 0 0 1px rgba(196, 181, 253, 0.3),
+    0 8px 24px rgba(139, 92, 246, 0.1),
+    0 32px 80px rgba(139, 92, 246, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
