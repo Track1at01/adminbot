@@ -4,7 +4,7 @@
 @import './variables.css'; */
 
 :root {
-    --background: #000000 ;
-    --text: #fffffff;
-    --primary: ;
+    --background: #07111d;
+    --text: #e7f0ff;
+    --primary: #5eead4;
 }

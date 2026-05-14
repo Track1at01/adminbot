@@ -1,38 +1,38 @@
 /* auth/styles.css — page-specific overrides on top of main.css */
 
-/* ─── Canvas background tinted for pastel feel ───────────────── */
+/* ─── Canvas background tinted for a moody futuristic feel ───── */
 #robot-background {
-  filter: hue-rotate(200deg) saturate(0.4) brightness(1.4);
-  opacity: 0.25;
+  filter: hue-rotate(170deg) saturate(1.1) brightness(1.2);
+  opacity: 0.28;
 }
 
-/* ─── Extra decorative circles ───────────────────────────────── */
+/* ─── Extra decorative glow layers ───────────────────────────── */
 .auth-page::before {
   content: "";
   position: fixed;
   inset: 0;
   background:
     radial-gradient(
-      ellipse 55% 50% at 8% 12%,
-      rgba(196, 181, 253, 0.55) 0%,
+      ellipse 55% 50% at 10% 12%,
+      rgba(94, 234, 212, 0.18) 0%,
       transparent 55%
     ),
     radial-gradient(
-      ellipse 45% 40% at 92% 88%,
-      rgba(253, 164, 175, 0.45) 0%,
+      ellipse 45% 40% at 90% 87%,
+      rgba(244, 114, 182, 0.16) 0%,
       transparent 55%
     ),
     radial-gradient(
-      ellipse 40% 50% at 55% 5%,
-      rgba(147, 197, 253, 0.3) 0%,
+      ellipse 40% 50% at 50% 6%,
+      rgba(56, 189, 248, 0.14) 0%,
       transparent 55%
     ),
     radial-gradient(
-      ellipse 50% 40% at 5% 90%,
-      rgba(134, 239, 172, 0.25) 0%,
+      ellipse 50% 42% at 6% 90%,
+      rgba(124, 58, 237, 0.16) 0%,
       transparent 55%
     ),
-    linear-gradient(148deg, #f2eefb 0%, #ede8f8 50%, #e8e0f5 100%);
+    linear-gradient(148deg, #08121f 0%, #091a2b 50%, #07101d 100%);
   z-index: 0;
   pointer-events: none;
 }
@@ -41,16 +41,16 @@
 .scene-wrap::after {
   content: "";
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(253, 164, 175, 0.25) 0%,
+    rgba(94, 234, 212, 0.18) 0%,
     transparent 70%
   );
-  bottom: -120px;
-  left: -100px;
+  bottom: -140px;
+  left: -120px;
   animation: floatBlob2 10s ease-in-out infinite alternate;
   pointer-events: none;
 }
@@ -60,18 +60,14 @@
     transform: translate(0, 0) scale(1);
   }
   to {
-    transform: translate(20px, -30px) scale(1.08);
+    transform: translate(18px, -26px) scale(1.06);
   }
 }
 
 /* ─── Brand pill ─────────────────────────────────────────────── */
 .eyebrow {
-  background: linear-gradient(
-    135deg,
-    rgba(196, 181, 253, 0.25),
-    rgba(253, 164, 175, 0.2)
-  );
-  border: 1px solid rgba(196, 181, 253, 0.45);
+  background: var(--accent-soft);
+  border: 1px solid rgba(94, 234, 212, 0.35);
 }
 
 /* ─── Divider line between label and input ───────────────────── */
@@ -81,10 +77,9 @@
 
 /* ─── Card shimmer on load ───────────────────────────────────── */
 .auth-card {
-  background: rgba(255, 255, 255, 0.84);
+  background: rgba(7, 17, 29, 0.98);
   box-shadow:
-    0 0 0 1px rgba(196, 181, 253, 0.3),
-    0 8px 24px rgba(139, 92, 246, 0.1),
-    0 32px 80px rgba(139, 92, 246, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
+    0 0 0 1px rgba(94, 234, 212, 0.14),
+    0 10px 40px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }

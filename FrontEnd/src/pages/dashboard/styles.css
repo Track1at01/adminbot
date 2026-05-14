@@ -22,21 +22,21 @@
 
 .stat-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.15);
+  box-shadow: 0 16px 40px rgba(94, 234, 212, 0.16);
 }
 
-/* Pastel color tints per card */
+/* Tonal color tints per card */
 .stat-card:nth-child(1) {
-  background: linear-gradient(145deg, #fff 60%, rgba(196, 181, 253, 0.2));
+  background: linear-gradient(145deg, #08131f 60%, rgba(94, 234, 212, 0.12));
 }
 .stat-card:nth-child(2) {
-  background: linear-gradient(145deg, #fff 60%, rgba(253, 164, 175, 0.2));
+  background: linear-gradient(145deg, #0c1523 60%, rgba(251, 113, 133, 0.14));
 }
 .stat-card:nth-child(3) {
-  background: linear-gradient(145deg, #fff 60%, rgba(134, 239, 172, 0.2));
+  background: linear-gradient(145deg, #0d1b27 60%, rgba(56, 189, 248, 0.14));
 }
 .stat-card:nth-child(4) {
-  background: linear-gradient(145deg, #fff 60%, rgba(253, 186, 116, 0.2));
+  background: linear-gradient(145deg, #122230 60%, rgba(251, 191, 36, 0.14));
 }
 
 /* Decorative blob per card */
@@ -51,16 +51,16 @@
   opacity: 0.18;
 }
 .stat-card:nth-child(1)::after {
-  background: #8b5cf6;
+  background: #5eead4;
 }
 .stat-card:nth-child(2)::after {
-  background: #f43f5e;
+  background: #fb7185;
 }
 .stat-card:nth-child(3)::after {
-  background: #22c55e;
+  background: #38bdf8;
 }
 .stat-card:nth-child(4)::after {
-  background: #f59e0b;
+  background: #fbbf24;
 }
 
 .stat-card h3 {
@@ -82,16 +82,16 @@
   background-clip: text;
 }
 .stat-card:nth-child(1) .stat-value {
-  background-image: linear-gradient(135deg, #8b5cf6, #c4b5fd);
+  background-image: linear-gradient(135deg, #5eead4, #38bdf8);
 }
 .stat-card:nth-child(2) .stat-value {
-  background-image: linear-gradient(135deg, #f43f5e, #fda4af);
+  background-image: linear-gradient(135deg, #fb7185, #fda4af);
 }
 .stat-card:nth-child(3) .stat-value {
-  background-image: linear-gradient(135deg, #16a34a, #86efac);
+  background-image: linear-gradient(135deg, #38bdf8, #7dd3fc);
 }
 .stat-card:nth-child(4) .stat-value {
-  background-image: linear-gradient(135deg, #d97706, #fdba74);
+  background-image: linear-gradient(135deg, #fbbf24, #fb7185);
 }
 
 /* Stat card top bar */
@@ -105,16 +105,16 @@
   border-radius: 20px 20px 0 0;
 }
 .stat-card:nth-child(1)::before {
-  background: linear-gradient(90deg, #8b5cf6, #c4b5fd);
+  background: linear-gradient(90deg, #5eead4, #38bdf8);
 }
 .stat-card:nth-child(2)::before {
-  background: linear-gradient(90deg, #f43f5e, #fda4af);
+  background: linear-gradient(90deg, #fb7185, #fda4af);
 }
 .stat-card:nth-child(3)::before {
-  background: linear-gradient(90deg, #16a34a, #86efac);
+  background: linear-gradient(90deg, #38bdf8, #7dd3fc);
 }
 .stat-card:nth-child(4)::before {
-  background: linear-gradient(90deg, #d97706, #fdba74);
+  background: linear-gradient(90deg, #fbbf24, #fb7185);
 }
 
 /* ─── Charts section ─────────────────────────────────────────── */
