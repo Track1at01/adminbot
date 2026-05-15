@@ -34,21 +34,20 @@ app.get("/", (req, res)=>{
     res.send("Api funcionando")
 })
 
-// const passwordlist = [
-//   "joel123",
-//   "juan123",
-//   "andres123",
-//   "alejandro123",
-//   "guillermo123"
+//  const passwordlist = [
+//    "mamelungas"
 
-// ]
+//  ]
 
-// for(let i = 0; i < passwordlist.length; i++){
-//   const hash = await bcrypt.hash(passwordlist[i], 10)
+//  for(let i = 0; i < passwordlist.length; i++){
+//    const hash = await bcrypt.hash(passwordlist[i], 10)
 //   console.log(`contraseña :  ${passwordlist[i]}, hash: ${hash}` )
   
-// }
+//  }
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+
+// const hash = await bcrypt.hash("password", 10)
+// console.log(hash)

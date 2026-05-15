@@ -1,6 +1,6 @@
 import bcrypt from "bcrypt";
 
-const password = "$2b$10$u0F8R3H7gTb9MPVlwPZuTugdgJVFeeCvRkMwENLz7/KpYIynpxp1u"; // ← tu contraseña real
+const password = "$2b$10$iVFGjLmKIbA.z491kTqLkus0pF73ngsVGZBijGKhSVPPk4iw8qaB2"; // ← tu contraseña real
 
 bcrypt.hash(password, 10).then(hash => {
   console.log("Hash generado:");
